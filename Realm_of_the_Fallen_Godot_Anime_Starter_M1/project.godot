@@ -1,0 +1,29 @@
+; Realm of the Fallen — The Awakening (Milestone 1)
+; Open with Godot 4.7.x. Uses only built-in nodes and bundled resources.
+config_version=5
+
+[application]
+config/name="Realm of the Fallen | The Awakening"
+run/main_scene="res://scenes/main.tscn"
+config/description="A cinematic dark-anime fantasy prototype for Android."
+
+[display]
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=2
+shadows/directional_shadow/size=2048
+shadows/directional_shadow/soft_shadow_filter_quality=1
+textures/default_filters/anisotropic_filtering_level=2
+
+[physics]
+3d/default_gravity=19.6
+
+[environment]
+defaults/default_clear_color=Color(0.035, 0.067, 0.1, 1)
